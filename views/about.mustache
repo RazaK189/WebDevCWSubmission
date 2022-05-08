@@ -1,0 +1,51 @@
+<html>
+
+{{> pages/header}}
+
+<body>
+    {{> pages/nav}}
+
+<style>
+body {
+  background-image: url('images/home.jpg');
+}
+</style>
+
+
+<div class="col text-center">         
+<div class="text-right" style="margin-bottom: 1em;">
+            {{^user}}
+            <a id="login" href="/login" class="btn btn-primary"  style="background-color: #A14C4C ; border-color:#A14C4C;" >
+                Sign in
+            </a>
+
+            {{/user}}
+            {{#user}}
+            <a id="logout" href="/logout" class="btn btn-primary"  style="background-color: #A14C4C; border-color:#A14C4C;" >
+                Sign out
+            </a>
+            {{/user}}
+        </div>
+
+    <div class="about">
+    <div class = "about-content">
+    <h1> Eat Good, Feel Good</h1>  
+    <hr>
+
+   <h2> <p> Our goal is to ensure you have a wonderful experince here at fresco diario. <p>
+   We offer a range of traditional and westernaised mexican dishes.
+   <p> Our Slogan Feel Good, Eat Good, is what we stand by.
+   </p></h2>
+<hr>
+   <h2> Find us at
+   <p> 9 Gordan Street<br>
+   Glasgow</p></h2>
+   </div>
+
+       </div>
+
+   
+    
+</body>
+{{> pages/footer}}
+</html>

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf9f6;
+  color: #8f00ff;
+  font-family: "Lucida Sans";
+}
+
+.pages {
+  height: 100%;
+}
+.pages ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pages li {
+  list-style: none;
+}
+
+.pages li a {
+  display: block;
+  text-decoration: none;
+  color: #8f00ff;
+  padding: 1rem;
+  font-family: "fantasy";
+  font-size: 26px;
+}
+
+.pages li:hover {
+  background-color: #555;
+}
+
+.navbar-name {
+  font-family: cursive;
+  font-size: 26px;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(2, 700px 1fr);
+  align-items: center;
+  margin-top: 30px;
+}
+
+.welcome-content {
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+
+.welcome-content h2 {
+  margin-top: 80x;
+  margin-left: 100;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+}
+
+.welcome-content h1 {
+  margin-top: 25px;
+  text-align: center;
+  color: black;
+  font-size: 110px;
+  font-family: cursive;
+}
+
+.pic1 {
+  float: right;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.pic2 {
+  float: right;
+  margin-left: 180px;
+  margin-top: 60px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 700px 1fr);
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about-content {
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+
+.about-content h1 {
+  margin-top: 25px;
+  text-align: center;
+  color: black;
+  font-size: 110px;
+  font-family: cursive;
+}

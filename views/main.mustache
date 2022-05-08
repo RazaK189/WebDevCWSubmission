@@ -1,0 +1,50 @@
+<html>
+
+{{> pages/header}}
+
+<body>
+    {{> pages/nav}}
+
+<style>
+body {
+  background-image: url('images/home.jpg');
+}
+</style>
+
+<img src="images/nachos.jpg" alt="banner" width="260" height="700" class = pic1>
+<img src="images/fresh.jpg" alt="banner" width="260" height="700" class = pic2>
+
+<div class="col text-center">         
+<div class="text-right" style="margin-bottom: 1em;">
+            {{^user}}
+            <a id="login" href="/login" class="btn btn-primary"  style="background-color: #A14C4C ; border-color:#A14C4C;" >
+                Sign in
+            </a>
+
+            {{/user}}
+            {{#user}}
+            <a id="logout" href="/logout" class="btn btn-primary"  style="background-color: #A14C4C; border-color:#A14C4C;" >
+                Sign out
+            </a>
+            {{/user}}
+        </div>
+
+    <div class="welcome">
+    <div class = "welcome-content">
+    <h1> Eat Good, Feel Good</h1>  
+    <hr> 
+
+
+   <h2> <p> Come along and enjoy a vast variety of your Mexican favourite dishes <p>
+   <p> <h2> Cut from fresh new ingredients everyday we gaurentee that you will love 
+   our range of Mexican Cuisine 
+   </p></h2>ß
+   </div>
+
+       </div>
+
+   
+    
+</body>
+{{> pages/footer}}
+</html>
